@@ -3,15 +3,15 @@
     <nav>
       <ul>
         <li :class="{ active: active === 'view-stock' }" @click="goToViewStock">
-          <button class="flex-col justify-center items-center text-black hover:scale-110 rounded-md shadow-lg">
+          <button class="flex-col justify-center items-center text-black hover:scale-110 rounded-md shadow-lg huninn-regular">
             <img src="/viewstock-1.svg" alt="Trend">股票速覽</button>
         </li>
         <li :class="{ active: active === 'stock-analysis' }" @click="goAnalysis">
-          <button class="flex-col justify-center items-center text-black hover:scale-110 rounded-md shadow-lg">
+          <button class="flex-col justify-center items-center text-black hover:scale-110 rounded-md shadow-lg huninn-regular">
             <img src="/analysis-1.svg" alt="Analysis">分析儀表</button>
         </li>
         <li :class="{ active: active === '/stock-link' }" @click="goLink">
-          <button class="flex-col justify-center items-center text-black hover:scale-110 rounded-md shadow-lg">
+          <button class="flex-col justify-center items-center text-black hover:scale-110 rounded-md shadow-lg huninn-regular">
             <img src="/linkstock-1.svg" alt="News">連動個股</button>
         </li>
       </ul>

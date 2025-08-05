@@ -16,7 +16,7 @@
 
     <div class="actions">
       <button @click="goAI" class="ai hover:scale-110 rounded-md shadow-lg"><img src="/AIbutton.svg" alt="AI"></button>
-      <div class="avatar">🙂</div>
+      <div class="avatar hover:scale-110 rounded-md shadow-lg"><img src="/info.png" alt="bafeiyo"></div>
     </div>
   </header>
 </template>

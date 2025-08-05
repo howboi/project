@@ -8,7 +8,10 @@ import smartAI from '../views/smartAI.vue';
 
 const routes = [
     { path: '/', name: 'home', component: homePage }, //建立路徑home
-    { path: '/view', name: 'view', component: Layout },
+    { path: '/view-stock', name: 'view', component: Layout },
+    { path: '/stock-analysis', name: 'analysis', component: Layout },
+    { path: '/stock-link', name: 'link', component: Layout },
+    { path: '/smart-ai', name: 'AI', component: Layout },
 ];
 
 const router = createRouter({ //建立路由器
