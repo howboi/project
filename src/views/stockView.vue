@@ -3,13 +3,13 @@
     <!-- 上方：標題 & 自選按鈕 -->
     <div class="row heading">
       <h2>{{ symbol }} {{ name }}</h2>
-      <div class="price">
+      <div class="price text-black">
         目前價格：<strong>{{ price }}</strong>
         <span class="change" :class="{ up: changePct > 0, down: changePct < 0 }">
           {{ change > 0 ? '+' : '' }}{{ change }} ({{ changePct }}%)
         </span>
       </div>
-      <button class="fav">＋ 自選</button>
+      <button class="fav text-black font-extrabold">＋ 自選</button>
     </div>
 
     <div class="grid">
@@ -23,20 +23,20 @@
         <StatCard class="prob">
           <div class="prob-circle">
             <div class="value">75%</div>
-            <div class="label">隔日上漲機率</div>
+            <div class="label text-black">隔日上漲機率</div>
           </div>
         </StatCard>
 
         <StatCard>
-          <h4>回測依據</h4>
-          <p>看機器學習跑出啥（Placeholder）</p>
+          <h4 class="text-black">回測依據</h4>
+          <p class="text-black">看機器學習跑出啥（Placeholder）</p>
         </StatCard>
 
         <div class="tags">
-          <StatCard class="tag" variant="positive"><div>技術<br/>偏多</div></StatCard>
-          <StatCard class="tag" variant="positive"><div>籌碼<br/>偏多</div></StatCard>
-          <StatCard class="tag" variant="negative"><div>消息<br/>偏空</div></StatCard>
-          <StatCard class="tag" variant="positive"><div>基本<br/>偏多</div></StatCard>
+          <StatCard class="tag text-black" variant="positive"><div>技術<br/>偏多</div></StatCard>
+          <StatCard class="tag text-black" variant="positive"><div>籌碼<br/>偏多</div></StatCard>
+          <StatCard class="tag text-black" variant="negative"><div>消息<br/>偏空</div></StatCard>
+          <StatCard class="tag text-black" variant="positive"><div>基本<br/>偏多</div></StatCard>
         </div>
       </aside>
     </div>

@@ -11,11 +11,11 @@
           placeholder="輸入股票代碼..."
           @keyup.enter="onSearch"
       />
-      <button @click="onSearch">🔍</button>
+      <button @click="onSearch" class="hover:scale-110 rounded-md">🔍</button>
     </div>
 
     <div class="actions">
-      <button @click="goAI" class="ai"><img src="/AIbutton.svg" alt="AI"></button>
+      <button @click="goAI" class="ai hover:scale-110 rounded-md shadow-lg"><img src="/AIbutton.svg" alt="AI"></button>
       <div class="avatar">🙂</div>
     </div>
   </header>
@@ -49,7 +49,7 @@ const onSearch = () => {
   justify-content: space-between;
   padding: 0 25px;
   background: #eaf2f7;
-  height: 64px;
+  height: 4em;
   border-bottom: 1px solid #e5e7eb;
 }
 .Logo {
