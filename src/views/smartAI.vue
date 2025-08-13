@@ -3,19 +3,18 @@
     <aside class="chat-list">
       <h3>今天</h3>
       <ul>
-        <li class="active">近期股票趨勢</li>
-        <li>台積電近期股價分析</li>
+        <li class="active text-black">近期股票趨勢</li>
+        <li class="text-black">台積電近期股價分析</li>
       </ul>
     </aside>
     <section class="chat-window">
       <header class="chat-header">
         <img src="/AIbutton.svg" alt="AI" class="avatar" />
-        <h2>AI 智聊機器人</h2>
       </header>
       <div class="messages">
         <!-- 這裡顯示問答對話 -->
         <div v-for="(msg, idx) in messages" :key="idx" :class="['message', msg.from === 'ai' ? 'from-ai' : 'from-user']">
-          <p>{{ msg.text }}</p>
+          <p class="text-black">{{ msg.text }}</p>
         </div>
       </div>
       <footer class="chat-input">

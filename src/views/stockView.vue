@@ -1,7 +1,7 @@
 <template>
   <div class="view-stock">
     <!-- 上方：標題 & 自選按鈕 -->
-    <div class="row heading">
+    <div class="row heading text-black">
       <h2>{{ symbol }} {{ name }}</h2>
       <div class="price text-black">
         目前價格：<strong>{{ price }}</strong>

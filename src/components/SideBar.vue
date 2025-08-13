@@ -39,15 +39,6 @@ const goLink = () => {
   router.push('/stock-link')
 }
 
-function go(name: string) {
-  active.value = name
-  router.push({ name })
-}
-
-function set(name: string) {
-  active.value = name
-  // 你也可以放 modal 打開或非 router 的跳轉
-}
 </script>
 
 <style scoped>
@@ -58,21 +49,20 @@ function set(name: string) {
 }
 button{
   background: #d9ecf4;
+  border: #1a1a1a solid 1px;
 }
 ul {
   list-style: none;
-  padding: 12px 0;
+  padding: 1em 5px;
 }
 li {
   background: #d9ecf4;
-  padding: 12px 16px;
+  padding: 0.5em 0.5em;
   cursor: pointer;
-  border-left: 4px solid transparent;
 }
 li.active {
   color: #2563eb;
-  background: #eff6ff;
-  border-left-color: #2563eb;
+  background: #d9ecf4;
   font-weight: 600;
 }
 </style>

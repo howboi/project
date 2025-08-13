@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div @click="goHome" class="Logo flex justify-center">
-      <img src="/Logo.png" alt="AI Logo" class="Logo transform transition duration-300 hover:scale-110 rounded-md" />
+      <img src="/Logo.svg" alt="AI Logo" class="Logo transform transition duration-300 hover:scale-110 rounded-md" />
     </div>
 
     <div class="search">
@@ -15,8 +15,8 @@
     </div>
 
     <div class="actions">
-      <button @click="goAI" class="ai hover:scale-110 rounded-md shadow-lg"><img src="/AIbutton.svg" alt="AI"></button>
-      <div class="avatar hover:scale-110 rounded-md shadow-lg"><img src="/info.png" alt="bafeiyo"></div>
+      <div @click="goAI" class="ai hover:scale-110"><img src="/AIbutton.svg" alt="AI"></div>
+      <div class="avatar hover:scale-110 rounded-md"><img src="/avatar.svg" alt="bafeiyo"></div>
     </div>
   </header>
 </template>
@@ -48,7 +48,7 @@ const onSearch = () => {
   align-items: center;
   justify-content: space-between;
   padding: 0 25px;
-  background: #eaf2f7;
+  background: #d9ecf4;
   height: 4em;
   border-bottom: 1px solid #e5e7eb;
 }
@@ -76,14 +76,11 @@ const onSearch = () => {
   gap: 12px;
 }
 .ai {
-  width: 5em;
-  border: none;
-  background: #ece0ff;
-  padding: 6px 12px;
-  border-radius: 1px;
+  width: 6em;
+  border: 0;
 }
 .avatar {
-  width: 36px;
+  width: 3.3em;
   height: 36px;
   border-radius: 50%;
   background: #ddd;
