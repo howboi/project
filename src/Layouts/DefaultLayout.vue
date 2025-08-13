@@ -14,28 +14,32 @@ import SideBar from '../components/SideBar.vue'
 </script>
 
 <style scoped>
+:root {
+  --nav-size: 72px; /* Sidebar 寬度 & Header 高度 一致 */
+}
 .layout {
   background: #d9ecf4;
   height: 100vh;
   display: grid;
-  grid-template-rows: 64px 1fr;            /* header + 主體 */
-  grid-template-columns: 200px 1fr;         /* sidebar + 內容 */
+  grid-template-columns: var(--nav-size) 1fr;
+  grid-template-rows: var(--nav-size) 1fr;
   grid-template-areas:
     "header header"
     "sidebar content";
 }
 .header {
   grid-area: header;
+  width: var(--nav-size);
 }
 .sidebar {
   grid-area: sidebar;
-  border-right: 1px solid #e5e7eb;
+  width: var(--nav-size);
 }
 .layout {
   display: grid;
-  grid-template-rows: 64px 1fr;
+  grid-template-rows: 100px 1fr;
   /* 電腦版：200px 側欄 + 主體 */
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 150px 1fr;
 }
 
 @media (max-width: 768px) {

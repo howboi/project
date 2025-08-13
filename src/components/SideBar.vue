@@ -43,17 +43,18 @@ const goLink = () => {
 
 <style scoped>
 .sidebar {
-  width: 180px;
   background: #d9ecf4;
-  height: 0.5em;
+  border-left: 0.9em solid #d9ecf4;
 }
 button{
+  display: flex;
+  align-items: center;
   background: #d9ecf4;
   border: #1a1a1a solid 1px;
 }
 ul {
   list-style: none;
-  padding: 1em 5px;
+  padding: 2em 1px;
 }
 li {
   background: #d9ecf4;
@@ -63,6 +64,7 @@ li {
 li.active {
   color: #2563eb;
   background: #d9ecf4;
+  padding: 0.5em 0.5em;
   font-weight: 600;
 }
 </style>

@@ -1,17 +1,17 @@
 <template>
   <header class="header">
     <div @click="goHome" class="Logo flex justify-center">
-      <img src="/Logo.svg" alt="AI Logo" class="Logo transform transition duration-300 hover:scale-110 rounded-md" />
+      <img src="/Logo.svg" alt="Logo" class=" transform transition hover:scale-110 rounded-md" />
     </div>
 
-    <div class="search">
+    <div class="search text-black">
       <input
           v-model="keyword"
           type="text"
           placeholder="輸入股票代碼..."
           @keyup.enter="onSearch"
       />
-      <button @click="onSearch" class="hover:scale-110 rounded-md">🔍</button>
+      <button @click="onSearch" class="sbutton hover:scale-110 rounded-md"><img src="/searchButton.svg" alt="search"></button>
     </div>
 
     <div class="actions">
@@ -47,13 +47,11 @@ const onSearch = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 1.5em;
   background: #d9ecf4;
-  height: 4em;
-  border-bottom: 1px solid #e5e7eb;
 }
 .Logo {
-  width: 4em;
+  width: 6.3em;
 }
 .search {
   display: flex;
@@ -61,6 +59,9 @@ const onSearch = () => {
   flex: 1;
   max-width: 520px;
   margin: 0 24px;
+}
+.sbutton{
+  background: #d9ecf4;
 }
 .search input {
   flex: 1;
