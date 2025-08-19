@@ -60,6 +60,7 @@ li {
   background: #d9ecf4;
   padding: 0.5em 0.5em;
   cursor: pointer;
+  border-bottom: 1em;
 }
 li.active {
   color: #2563eb;
