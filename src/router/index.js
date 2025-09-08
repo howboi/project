@@ -7,66 +7,60 @@ import stockLink from '../views/stockLink.vue';
 import smartAI from '../views/smartAI.vue';
 
 const routes = [
-    { path: '/', name: 'home', component: homePage }, //建立路徑home
-    { path: '/view-stock', name: 'view', component: Layout },
-    { path: '/stock-analysis', name: 'analysis', component: Layout },
-    { path: '/stock-link', name: 'link', component: Layout },
-    { path: '/smart-ai', name: 'AI', component: Layout },
+    {
+        path: '/',
+        name: 'home',
+        component: homePage
+    },
+    {
+        path: '/view-stock',
+        component: Layout,
+        children: [
+            {
+                path: '',
+                name: 'view',
+                component: stockView
+            }
+        ]
+    },
+    {
+        path: '/stock-analysis',
+        component: Layout,
+        children: [
+            {
+                path: '',
+                name: 'analysis',
+                component: stockAnalysis
+            }
+        ]
+    },
+    {
+        path: '/stock-link',
+        component: Layout,
+        children: [
+            {
+                path: '',
+                name: 'link',
+                component: stockLink
+            }
+        ]
+    },
+    {
+        path: '/smart-ai',
+        component: Layout,
+        children: [
+            {
+                path: '',
+                name: 'AI',
+                component: smartAI
+            }
+        ]
+    }
 ];
 
-const router = createRouter({ //建立路由器
+const router = createRouter({
     history: createWebHistory(),
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: homePage,
-        },
-        {
-            path: '/view-stock',
-            component: Layout,
-            children: [
-                {
-                    path: '',
-                    name: 'view-stock',
-                    component: stockView,
-                },
-            ],
-        },
-        {
-            path: '/stock-analysis',
-            component: Layout,    // 使用帶 Header + SideBar 的 layout
-            children: [
-                {
-                    path: '',
-                    name: 'stock-analysis',
-                    component: stockAnalysis,
-                },
-            ],
-        },
-        {
-            path: '/stock-link',
-            component: Layout,  // 使用帶 Header + SideBar 的 layout
-            children: [
-                {
-                    path: '',
-                    name: 'stock-link',
-                    component: stockLink,
-                },
-            ],
-        },
-        {
-            path: '/smart-ai',
-            component: Layout,    // 使用帶 Header + SideBar 的 layout
-            children: [
-                {
-                    path: '',
-                    name: 'smart-ai',
-                    component: smartAI,
-                },
-            ],
-        },
-    ],
+    routes
 });
 
 export default router;
