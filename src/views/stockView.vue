@@ -108,7 +108,7 @@ const changePct = 3.38
 .change.down { color: #22c55e; }
 .fav {
   position: relative;
-  top: 0px;
+  top: 0;
   left: 1000px;
   height: 3em;
   border-radius: 16px;
