@@ -81,6 +81,11 @@ const news = [
 </script>
 
 <style scoped>
+.stock-analysis {
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
+  min-height: 100vh;
+  padding: 16px;
+}
 .section { background: #fff; padding: 16px; border-radius: 8px; margin-bottom: 24px; }
 .overview-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
 .metrics, .indicators { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 12px; }

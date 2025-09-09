@@ -46,8 +46,10 @@ function sendMessage() {
 .smart-ai-chat {
   display: grid;
   grid-template-columns: 200px 1fr;
-  height: 100%;
+  height: 100vh;
   gap: 16px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
+  padding: 16px;
 }
 .chat-list {
   background: #f1f5f9;

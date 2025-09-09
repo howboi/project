@@ -29,13 +29,17 @@ const search = () => {
   // Add search functionality here
   console.log('Searching for:', searchQuery.value);
 }
+
+const showComingSoonAlert = () => {
+  alert('此功能尚未開放，敬請期待!')
+}
 </script>
 
 <template>
   <div class="homepage">
     <div class="flex header mr-5 gap-5">
-      <span class="register huninn-regular ring text-black">註冊</span>
-      <span class="login huninn-regular text-black">登入</span>
+      <span @click="showComingSoonAlert" class="register huninn-regular ring text-black">註冊</span>
+      <span @click="showComingSoonAlert" class="login huninn-regular text-black">登入</span>
     </div>
     <div class="main-content mt-20">
       <div @click="goHome" class="flex justify-center">

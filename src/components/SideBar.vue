@@ -43,13 +43,14 @@ const goLink = () => {
 
 <style scoped>
 .sidebar {
-  background: #d9ecf4;
-  border-left: 0.9em solid #d9ecf4;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
+  border-left: 0.9em solid transparent;
+  border-image: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%) 1;
 }
 button{
   display: flex;
   align-items: center;
-  background: #d9ecf4;
+  background: rgba(255, 255, 255, 0.7);
   border: #1a1a1a solid 1px;
 }
 ul {
@@ -57,15 +58,16 @@ ul {
   padding: 2em 1px;
 }
 li {
-  background: #d9ecf4;
+  background: transparent;
   padding: 0.5em 0.5em;
   cursor: pointer;
   border-bottom: 1em;
 }
 li.active {
   color: #2563eb;
-  background: #d9ecf4;
+  background: rgba(255, 255, 255, 0.9);
   padding: 0.5em 0.5em;
   font-weight: 600;
+  border-radius: 8px;
 }
 </style>

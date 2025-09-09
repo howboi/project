@@ -5,13 +5,18 @@
     </div>
 
     <div class="search text-black">
-      <input
-          v-model="keyword"
-          type="text"
-          placeholder="輸入股票代碼..."
-          @keyup.enter="onSearch"
-      />
-      <button @click="onSearch" class="sbutton hover:scale-110 rounded-md"><img src="/searchButton.svg" alt="search"></button>
+      <div class="search-container">
+        <input
+            v-model="keyword"
+            type="text"
+            placeholder="輸入股票代碼..."
+            @keyup.enter="onSearch"
+            class="search-input"
+        />
+        <button @click="onSearch" class="search-button">
+          🔍
+        </button>
+      </div>
     </div>
 
     <div class="actions">
@@ -48,28 +53,60 @@ const onSearch = () => {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5em;
-  background: #d9ecf4;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
 }
 .Logo {
-  width: 6.3em;
+  width: 5em;
+  margin-left: 1em;
 }
 .search {
   display: flex;
-  gap: 4px;
+  justify-content: center;
   flex: 1;
-  max-width: 520px;
+  max-width: 500px;
   margin: 0 24px;
 }
-.sbutton{
-  background: #d9ecf4;
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow: hidden;
 }
-.search input {
+
+.search-input {
   flex: 1;
-  height: 36px;
-  padding: 0 12px;
-  border: 1px solid #cbd5e1;
-  border-radius: 18px;
+  border: none;
   outline: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: transparent;
+  color: #374151;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+.search-button {
+  background: #f3f4f6;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background: #e5e7eb;
 }
 .actions {
   display: flex;

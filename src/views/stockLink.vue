@@ -49,7 +49,11 @@ function goToAnalysis(symbol: string) {
 </script>
 
 <style scoped>
-.stock-link { padding: 16px; background: #d9ecf4; }
+.stock-link { 
+  padding: 16px; 
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
+  min-height: 100vh;
+}
 .saved-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
 .saved-list button { padding: 8px 12px; background: #fff; border: 1px solid #ccc; border-radius: 4px; }
 .add-stock { margin-top: 16px; display: flex; gap: 8px; }
