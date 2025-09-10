@@ -43,6 +43,9 @@ const goAI = () => {
 const keyword = ref('')
 const onSearch = () => {
   console.log('search:', keyword.value)
+  if (keyword.value === '2330') {
+    router.push('/view-stock')
+  }
   // 你可以在這裡觸發 API 或 router push
 }
 </script>

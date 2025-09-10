@@ -7,7 +7,7 @@
       </li>
     </ul>
     <div class="add-stock">
-      <input v-model="newSymbol" placeholder="輸入股票代碼" />
+      <input v-model="newSymbol" placeholder="輸入股票代碼" @keyup.enter="saveSymbol" />
       <button @click="saveSymbol">儲存</button>
     </div>
   </div>
@@ -35,6 +35,10 @@ onMounted(() => {
 })
 
 function saveSymbol() {
+  if (newSymbol.value === '2330') {
+    router.push('/view-stock')
+    return
+  }
   if (newSymbol.value && !savedStocks.value.includes(newSymbol.value)) {
     savedStocks.value.push(newSymbol.value)
     localStorage.setItem('savedStocks', JSON.stringify(savedStocks.value))

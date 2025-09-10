@@ -89,19 +89,19 @@
           <!-- Analysis tags -->
           <div class="analysis-tags">
             <div class="tag bullish">
-              <div class="tag-label">技術</div>
+              <div class="tag-label"><strong>技術</strong></div>
               <div class="tag-value">偏多</div>
             </div>
             <div class="tag bullish">
-              <div class="tag-label">籌碼</div>
+              <div class="tag-label"><strong>籌碼</strong></div>
               <div class="tag-value">偏多</div>
             </div>
             <div class="tag bearish">
-              <div class="tag-label">消息</div>
+              <div class="tag-label"><strong>消息</strong></div>
               <div class="tag-value">偏空</div>
             </div>
             <div class="tag bullish">
-              <div class="tag-label">基本</div>
+              <div class="tag-label"><strong>基本</strong></div>
               <div class="tag-value">偏多</div>
             </div>
           </div>
@@ -129,9 +129,9 @@ const changePct = 3.38
 
 /* Main Content */
 .main-content {
-  padding: 24px;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 28px;
+  max-width: 1500px;
+  margin: 0;
 }
 
 .stock-info-header {
@@ -140,7 +140,7 @@ const changePct = 3.38
   justify-content: space-between;
   margin-bottom: 24px;
   background: white;
-  padding: 20px 24px;
+  padding: 24px 28px;
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
@@ -202,7 +202,7 @@ const changePct = 3.38
 /* Content Grid */
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 350px;
+  grid-template-columns: 1fr 380px;
   gap: 24px;
   align-items: start;
 }
@@ -237,7 +237,7 @@ const changePct = 3.38
 
 .mock-chart {
   width: 100%;
-  height: 400px;
+  height: 420px;
   border-radius: 8px;
   margin-bottom: 16px;
 }
@@ -285,7 +285,7 @@ const changePct = 3.38
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #374151;
   margin: 0 0 20px 0;
@@ -298,8 +298,8 @@ const changePct = 3.38
 }
 
 .circle-progress {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   background: conic-gradient(from 0deg, #ef4444 0deg, #ef4444 270deg, #e5e7eb 270deg, #e5e7eb 360deg);
   border-radius: 50%;
   display: flex;
@@ -311,14 +311,14 @@ const changePct = 3.38
 .circle-progress::before {
   content: '';
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
   background: white;
   border-radius: 50%;
 }
 
 .percentage {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   color: #1f2937;
   position: relative;
@@ -333,7 +333,7 @@ const changePct = 3.38
 }
 
 .basis-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #374151;
   margin: 0 0 12px 0;
@@ -375,14 +375,14 @@ const changePct = 3.38
 }
 
 .tag-label {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 4px;
   opacity: 0.9;
 }
 
 .tag-value {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
 }
 

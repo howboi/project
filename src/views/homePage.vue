@@ -28,6 +28,9 @@ const goAI = () => {
 const search = () => {
   // Add search functionality here
   console.log('Searching for:', searchQuery.value);
+  if (searchQuery.value === '2330') {
+    router.push('/view-stock')
+  }
 }
 
 const showComingSoonAlert = () => {
@@ -54,6 +57,7 @@ const showComingSoonAlert = () => {
             class="ring-2 ring-black w-100 huninn-regular text-black"
             type="text"
             placeholder="輸入股票代碼..."
+            @keyup.enter="search"
         />
         <button @click="search" class="ring-2 ring-black">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
