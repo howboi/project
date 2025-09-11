@@ -114,15 +114,15 @@ const onSearch = () => {
 .actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 .ai {
-  width: 6em;
+  width: 7em;
   border: 0;
 }
 .avatar {
-  width: 3.3em;
-  height: 36px;
+  width: 4.2em;
+  height: 45px;
   border-radius: 50%;
   background: #ddd;
   display: flex;
