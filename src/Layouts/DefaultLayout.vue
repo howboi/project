@@ -18,8 +18,8 @@ import SideBar from '../components/SideBar.vue'
   --nav-size: 72px; /* Sidebar 寬度 & Header 高度 一致 */
 }
 .layout {
-  background: #d9ecf4;
-  height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
+  min-height: 100vh;
   display: grid;
   grid-template-columns: var(--nav-size) 1fr;
   grid-template-rows: var(--nav-size) 1fr;

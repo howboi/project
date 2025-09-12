@@ -121,7 +121,7 @@ const changePct = 3.38
 
 <style scoped>
 .stock-view-container {
-  min-height: 100vh;
+  min-height: 0;
   background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
   padding: 0;
   margin: 0;
@@ -129,19 +129,21 @@ const changePct = 3.38
 
 /* Main Content */
 .main-content {
-  padding: 28px;
-  max-width: 1500px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
+  padding: 0;
+  max-width: 1600px;
   margin: 0;
+  border-right: 1em solid #f3e5f5;
 }
 
 .stock-info-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   background: white;
-  padding: 24px 28px;
-  border-radius: 16px;
+  padding: 26px 30px;
+  border-radius: 17px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -202,23 +204,23 @@ const changePct = 3.38
 /* Content Grid */
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 380px;
-  gap: 24px;
+  grid-template-columns: 1fr 400px;
+  gap: 26px;
   align-items: start;
 }
 
 /* Chart Section */
 .chart-section {
   background: white;
-  border-radius: 16px;
-  padding: 24px;
+  border-radius: 17px;
+  padding: 26px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .chart-legend {
   display: flex;
-  gap: 24px;
-  margin-bottom: 16px;
+  gap: 26px;
+  margin-bottom: 18px;
 }
 
 .legend-item {
@@ -237,19 +239,19 @@ const changePct = 3.38
 
 .mock-chart {
   width: 100%;
-  height: 420px;
-  border-radius: 8px;
-  margin-bottom: 16px;
+  height: 440px;
+  border-radius: 9px;
+  margin-bottom: 18px;
 }
 
 .chart-controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  padding: 16px;
+  gap: 18px;
+  padding: 17px;
   background: #374151;
-  border-radius: 8px;
+  border-radius: 9px;
 }
 
 .chart-control-btn {
@@ -273,13 +275,13 @@ const changePct = 3.38
 .analysis-panel {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
 .probability-card {
   background: white;
-  border-radius: 16px;
-  padding: 24px;
+  border-radius: 17px;
+  padding: 26px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
@@ -327,8 +329,8 @@ const changePct = 3.38
 
 .analysis-basis {
   background: white;
-  border-radius: 16px;
-  padding: 20px;
+  border-radius: 17px;
+  padding: 22px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -348,13 +350,13 @@ const changePct = 3.38
 .analysis-tags {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 14px;
 }
 
 .tag {
   background: white;
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 13px;
+  padding: 18px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease;
