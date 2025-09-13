@@ -75,7 +75,7 @@ const onSearch = () => {
   margin-left: 1em;
 }
 .logo-img {
-  width: 60px; /* 跟 Figma 一樣大 */
+  width: 120px; /* 跟 Figma 一樣大 */
   height: auto;
 }
 
