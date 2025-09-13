@@ -5,18 +5,6 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const searchQuery = ref('')
 
-const goToViewStock = () => {
-  router.push('/view-stock')
-}
-
-const goAnalysis = () => {
-  router.push('/stock-analysis')
-}
-
-const goLink = () => {
-  router.push('/stock-link')
-}
-
 const goHome = () => {
   router.push('/')
 }
@@ -66,15 +54,15 @@ const showComingSoonAlert = () => {
         </button>
       </div>
       <div class="options flex justify-center margin-bottom-10">
-        <button @click="goToViewStock" class="flex-col justify-center items-center text-black">
+        <div class="feature-item flex-col justify-center items-center text-black">
           <img src="/viewstock-1.svg" alt="Trend">股票速覽
-        </button>
-        <button @click="goAnalysis" class="flex-col justify-center items-center text-black">
+        </div>
+        <div class="feature-item flex-col justify-center items-center text-black">
           <img src="/analysis-1.svg" alt="Analysis">分析儀表
-        </button>
-        <button @click="goLink" class="flex-col justify-center items-center text-black text gap-2">
+        </div>
+        <div class="feature-item flex-col justify-center items-center text-black">
           <img src="/linkstock-1.svg" alt="News">連動個股
-        </button>
+        </div>
       </div>
       <button @click="goAI" class="AI-button mb-20 transform transition-transform duration-300 hover:scale-110">
         <img src="/AIbutton.svg" alt="AI">
@@ -156,7 +144,7 @@ const showComingSoonAlert = () => {
   color: black;
   background: #5E342C;
 }
-.options button{
+.feature-item{
   display: flex;
   justify-content: center;
   font-weight: 800;
@@ -169,15 +157,10 @@ const showComingSoonAlert = () => {
   background: #a1cbd3;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
 }
-.options button img {
+.feature-item img {
   width: 4em;
   height: 4em;
-}
-.options button:hover {
-  color: black;
-  background: white;
 }
 .AI-button {
   width: 10em;
